@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 33 39% 98%;
+    --foreground: 33 74% 2%;
+    --muted: 273.96 29% 91%;
+    --muted-foreground: 260.38 12% 29%;
+    --popover: 33 39% 98%;
+    --popover-foreground: 33 74% 2%;
+    --card: 275 46% 53%;
+    --card-foreground: 33 74% 2%;
+    --border: 280.75 4% 89%;
+    --input: 283.02 4% 89%;
+    --primary: 263.42 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 263.42 98.65% 70.98%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 273 53% 37%;
+    --accent-foreground: 273 53% 97%;
+    --destructive: 11 88.43% 38.78%;
+    --destructive-foreground: 11 0% 100%;
+    --ring: 33 53% 37%;
+    --radius: 0.5rem;
+
+    --up: 142 71% 45%;
+    --down: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 33 53% 0%;
+    --foreground: 33 18% 100%;
+    --muted: 269.43 29% 9%;
+    --muted-foreground: 262.64 12% 71%;
+    --popover: 33 53% 0%;
+    --popover-foreground: 33 18% 100%;
+    --card: 275 100% 92%;
+    --card-foreground: 33 18% 100%;
+    --border: 33 4% 10%;
+    --input: 289.81 21.6% 16.45%;
+    --primary: 263.42 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 263.42 98.65% 70.98%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 273 53% 37%;
+    --accent-foreground: 273 53% 97%;
+    --destructive: 0 100% 60.09%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 33 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    overflow-x: hidden;
+    background-color: #696e77;
+  }
+  body {
+    @apply bg-background text-foreground;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    margin: auto;
+    border-radius: 20px;
+    width: 390px;
+    height: 760px;
+    min-height: 0px;
+    overflow: hidden;
+  }
+}
+
+@font-face {
+  font-family: Monument;
+  src: url(~/public/fonts/Monument-Bold.otf) format("woff");
+}

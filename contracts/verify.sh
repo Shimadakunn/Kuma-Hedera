@@ -1,0 +1,1 @@
+forge inspect Paymaster metadata > metadata.json --via-ir

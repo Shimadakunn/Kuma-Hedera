@@ -1,0 +1,1 @@
+export $(cat .env | xargs) && forge script DeployPaymaster --private-key $PRIVATE_KEY --rpc-url $RPC_URL --slow --broadcast --via-ir
