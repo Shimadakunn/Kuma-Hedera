@@ -11,26 +11,7 @@ export type ContractType = {
 
 export const contracts: {
   [key: string]: ContractType;
-} = {
-  "aave-sepolia": {
-    name: "Aave",
-    address: "0x387d311e47e80b498169e6fb51d3193167d89F7D",
-    ipoolAddress: "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
-    tokenArray: ["eth-sepolia", "usdc-sepolia"],
-  },
-  "aave-arbitrumSepolia": {
-    name: "Aave",
-    address: "0x20040a64612555042335926d72B4E5F667a67fA1",
-    ipoolAddress: "0xBfC91D59fdAA134A4ED45f7B584cAf96D7792Eff",
-    tokenArray: ["eth-arbitrumSepolia", "usdc-arbitrumSepolia"],
-  },
-  "aave-optimismSepolia": {
-    name: "Aave",
-    address: "0x589750BA8aF186cE5B55391B0b7148cAD43a1619",
-    ipoolAddress: "0xb50201558B00496A145fE76f7424749556E326D8",
-    tokenArray: ["eth-optimismSepolia", "usdc-optimismSepolia"],
-  },
-};
+} = {};
 
 export const AAVE_ABI = [
   {

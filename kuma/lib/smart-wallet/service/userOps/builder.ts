@@ -5,7 +5,10 @@ import {
   FACTORY_ABI,
 } from "@/constants";
 import { smartWallet } from "@/lib/smart-wallet";
-import { DEFAULT_USER_OP } from "@/lib/smart-wallet/service/userOps/constants";
+import {
+  DEFAULT_USER_OP,
+  emptyHex,
+} from "@/lib/smart-wallet/service/userOps/constants";
 import {
   Call,
   UserOperation,
@@ -88,6 +91,7 @@ export class UserOpBuilder {
       walletClient,
       publicClient: this.publicClient,
     });
+    console.log("walletClient", walletClient.transport);
   }
 
   // reference: https://ethereum.stackexchange.com/questions/150796/how-to-create-a-raw-erc-4337-useroperation-from-scratch-and-then-send-it-to-bund
@@ -164,6 +168,7 @@ export class UserOpBuilder {
     userOp.paymasterAndData = concat([this.paymaster, encodedData]);
 
     userOp.paymasterAndData = this.paymaster;
+    userOp.paymasterAndData = "0x";
     console.log("PaymasterAndData", userOp.paymasterAndData);
 
     // get userOp hash (with signature == 0x) by calling the entry point contract

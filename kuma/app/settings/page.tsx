@@ -76,7 +76,7 @@ const Settings = () => {
         })}
       <Separator />
       <h2>Faucets</h2>
-      <FaucetCard token="eth-sepolia" />
+      {/* <FaucetCard token="eth-sepolia" /> */}
     </div>
   );
 };

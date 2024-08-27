@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.DS_Store
 # dependencies
 kuma/node_modules
 kuma/.pnp
@@ -43,3 +43,24 @@ contracts/lib/
 
 # Dotenv file
 contracts/.env
+
+# Binaries for programs and plugins
+bundler/*.exe
+bundler/*.exe~
+bundler/*.dll
+bundler/*.so
+bundler/*.dylib
+
+# Test binary, built with `go test -c`
+bundler/*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+bundler/*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# misc
+bundler/.DS_Store
+bundler/tmp
+bundler/.env

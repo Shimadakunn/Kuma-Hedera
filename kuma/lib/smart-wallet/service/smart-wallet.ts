@@ -55,6 +55,13 @@ class SmartWallet {
       ),
     });
   }
+  public initRpc(chain: ChainType) {
+    this._isInitiated = true;
+    this._client = createSmartWalletClient({
+      chain: chain.viem,
+      transport: http("https://testnet.hashio.io/api"),
+    });
+  }
 
   public init(chain: ChainType) {
     console.log("init smart wallet", chain);
