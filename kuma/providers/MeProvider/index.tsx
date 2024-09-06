@@ -6,7 +6,7 @@ import { WebAuthn } from "@/lib/web-authn/service/web-authn";
 import { saveUser } from "@/lib/factory";
 import { getUser } from "@/lib/factory/getUser";
 import { walletConnect } from "@/lib/wallet-connect/service/wallet-connect";
-import { Chain,arbitrumSepolia } from "viem/chains";
+import { Chain } from "viem/chains";
 import { chains } from "@/constants/chains";
 
 export type Me = {
@@ -33,7 +33,7 @@ function useMeHook() {
   async function create(username: string) {
     console.log("creating user", username);
     setIsLoading(true);
-    
+
     try {
       console.log("WebAuthn signature...");
       const credential = await WebAuthn.create({ username });
@@ -145,7 +145,5 @@ export const useMe = (): UseMeHook => {
 export function MeProvider({ children }: { children: React.ReactNode }) {
   const hook = useMeHook();
 
-  return (<MeContext.Provider value={hook}>
-    {children}
-  </MeContext.Provider>);
+  return <MeContext.Provider value={hook}>{children}</MeContext.Provider>;
 }

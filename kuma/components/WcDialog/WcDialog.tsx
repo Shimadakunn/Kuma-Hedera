@@ -133,9 +133,9 @@ export default function WCSendTransactionModal({
                 variant={"link"}
                 onClick={() =>
                   window.open(
-                    `${
-                      chains["arbitrumSepolia"].viem.blockExplorers!.default.url
-                    }/tx/${txReceipt?.receipt?.transactionHash}`,
+                    `${chains["hedera"].viem.blockExplorers!.default.url}/tx/${
+                      txReceipt?.receipt?.transactionHash
+                    }`,
                     "blank"
                   )
                 }

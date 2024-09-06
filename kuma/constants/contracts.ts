@@ -1,6 +1,3 @@
-import { sepolia, arbitrumSepolia } from "viem/chains";
-import { tokens, TokenType } from "./tokens";
-
 export type ContractType = {
   name: string;
   address: string;
@@ -12,7 +9,7 @@ export type ContractType = {
 export const contracts: {
   [key: string]: ContractType;
 } = {
-  "aave-sepolia": {
+  bonzo: {
     name: "Bonzo",
     address: "0x387d311e47e80b498169e6fb51d3193167d89F7D",
     ipoolAddress: "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",

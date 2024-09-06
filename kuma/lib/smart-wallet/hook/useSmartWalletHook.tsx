@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { smartWallet } from "../service/smart-wallet";
 import { Hash } from "viem";
-import{chains} from "@/constants";
+import { chains } from "@/constants";
 
 export function useSmartWalletHook() {
   const [address, setAddress] = useState<Hash | null>(null);
 
   async function init(address: Hash) {
-    smartWallet.init(chains["eth-arbitrumSepolia"]);
+    smartWallet.init(chains["hbar"]);
     setAddress(address);
   }
 

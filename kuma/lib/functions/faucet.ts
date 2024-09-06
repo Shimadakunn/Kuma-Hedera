@@ -8,8 +8,6 @@ import { smartWallet } from "@/lib/smart-wallet";
 import { UserOpBuilder, emptyHex } from "@/lib/smart-wallet/service/userOps";
 
 import { chains, TokenType, FAUCET_ADDRESS, FAUCET_ABI } from "@/constants";
-import { createPublicClient, http } from "viem";
-import { sepolia, mainnet, arbitrumSepolia } from "viem/chains";
 
 const builder = new UserOpBuilder();
 
