@@ -213,19 +213,10 @@ const Trade = () => {
                                     <Image
                                       src={`/tokens-icons/${tokens[
                                         token
-                                      ].coin.toLowerCase()}.svg`}
+                                      ].coin.toLowerCase()}.png`}
                                       width={25}
                                       height={25}
                                       alt={tokens[token].coin}
-                                    />
-                                    <Image
-                                      src={`/chains-icons/${
-                                        chains[tokens[token].network].viem.name
-                                      }.svg`}
-                                      width={15}
-                                      height={15}
-                                      alt={tokens[token].coin}
-                                      className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
                                     />
                                   </div>
                                   <h1>{tokens[token].coin}</h1>
@@ -246,16 +237,6 @@ const Trade = () => {
               <SelectContent>
                 {Object.keys(chains).map((key) => (
                   <SelectGroup key={key}>
-                    <SelectLabel className="flex items-center">
-                      <Image
-                        src={`/chains-icons/${chains[key].viem.name}.svg`}
-                        width={30}
-                        height={20}
-                        alt={chains[key].viem.name}
-                        className="mr-1"
-                      />
-                      <div className="">{chains[key].viem.name}</div>
-                    </SelectLabel>
                     {Object.keys(tokens).map(
                       (token) =>
                         chains[key].viem ===
@@ -266,19 +247,10 @@ const Trade = () => {
                                 <Image
                                   src={`/tokens-icons/${tokens[
                                     token
-                                  ].coin.toLowerCase()}.svg`}
+                                  ].coin.toLowerCase()}.png`}
                                   width={25}
                                   height={25}
                                   alt={tokens[token].coin}
-                                />
-                                <Image
-                                  src={`/chains-icons/${
-                                    chains[tokens[token].network].viem.name
-                                  }.svg`}
-                                  width={15}
-                                  height={15}
-                                  alt={tokens[token].coin}
-                                  className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
                                 />
                               </div>
                               <h1>{tokens[token].coin}</h1>

@@ -48,19 +48,10 @@ export default function Home() {
                       <Image
                         src={`/tokens-icons/${tokens[
                           key
-                        ].coin.toLowerCase()}.svg`}
+                        ].coin.toLowerCase()}.png`}
                         width={30}
                         height={30}
                         alt={tokens[key].coin}
-                      />
-                      <Image
-                        src={`/chains-icons/${
-                          chains[tokens[key].network].viem.name
-                        }.svg`}
-                        width={20}
-                        height={20}
-                        alt={tokens[key].coin}
-                        className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
                       />
                     </div>
                     <h1 className="text-lg">{tokens[key].name}</h1>

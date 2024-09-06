@@ -44,7 +44,7 @@ export class UserOpBuilder {
   public entryPoint: Hex = ENTRYPOINT_ADDRESS;
   // public paymaster: Hex = process.env
   //   .NEXT_PUBLIC_PAYMASTER_CONTRACT_ADDRESS! as Hex;
-  public paymaster: Hex = "0x20C95713389E68f7fB8Cb4eE82aF9Fe205B11850";
+  public paymaster: Hex = "0x19D8ACc0e4aA573C01F997f7D1805dBf62bBeF9D";
   public chain: Chain;
   public publicClient: PublicClient;
   public factoryContract: GetContractReturnType<
@@ -168,7 +168,6 @@ export class UserOpBuilder {
     userOp.paymasterAndData = concat([this.paymaster, encodedData]);
 
     userOp.paymasterAndData = this.paymaster;
-    userOp.paymasterAndData = "0x";
     console.log("PaymasterAndData", userOp.paymasterAndData);
 
     // get userOp hash (with signature == 0x) by calling the entry point contract

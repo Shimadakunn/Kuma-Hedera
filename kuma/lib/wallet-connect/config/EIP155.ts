@@ -98,6 +98,14 @@ export const EIP155_TEST_CHAINS = {
     rpc: "https://rpc.sepolia-api.lisk.com",
     namespace: "eip155",
   },
+  "eip155:296": {
+    chainId: 296,
+    name: "Hedera Testnet",
+    logo: "/chain-logos/eip155-296.png",
+    rgb: "99, 125, 234",
+    rpc: "https://testnet.hashio.io/api",
+    namespace: "eip155",
+  },
   // "eip155:43113": {
   //   chainId: 43113,
   //   name: "Avalanche Fuji",

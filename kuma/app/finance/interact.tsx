@@ -114,7 +114,7 @@ const Finance = () => {
                       <Image
                         src={`/tokens-icons/${tokens[
                           token
-                        ].coin.toLowerCase()}.svg`}
+                        ].coin.toLowerCase()}.png`}
                         width={30}
                         height={30}
                         alt={tokens[token].coin}
@@ -122,20 +122,11 @@ const Finance = () => {
                       <Image
                         src={`/contracts-icons/${contracts[
                           contract
-                        ].name.toLowerCase()}.svg`}
+                        ].name.toLowerCase()}.png`}
                         width={15}
                         height={15}
                         alt={contracts[contract].name.toLowerCase()}
                         className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
-                      />
-                      <Image
-                        src={`/chains-icons/${
-                          chains[tokens[token].network].viem.name
-                        }.svg`}
-                        width={17}
-                        height={17}
-                        alt={contracts[contract].name.toLowerCase()}
-                        className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4"
                       />
                     </div>
                     <h1 className="text-lg">{tokens[token].coin}</h1>
@@ -233,9 +224,10 @@ const Finance = () => {
                           </div>
                           <div className="flex items-center justify-center relative">
                             <Image
+                              className="border border-white rounded-full"
                               src={`/tokens-icons/${tokens[
                                 token
-                              ].coin.toLowerCase()}.svg`}
+                              ].coin.toLowerCase()}.png`}
                               width={100}
                               height={100}
                               alt={tokens[token].coin}
@@ -243,20 +235,11 @@ const Finance = () => {
                             <Image
                               src={`/contracts-icons/${contracts[
                                 contract
-                              ].name.toLowerCase()}.svg`}
+                              ].name.toLowerCase()}.png`}
                               width={40}
                               height={40}
                               alt={contracts[contract].name.toLowerCase()}
                               className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
-                            />
-                            <Image
-                              src={`/chains-icons/${
-                                chains[tokens[token].network].viem.name
-                              }.svg`}
-                              width={45}
-                              height={45}
-                              alt={contracts[contract].name.toLowerCase()}
-                              className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4"
                             />
                           </div>
                           <div className="flex items-center justify-center space-x-4 w-full">

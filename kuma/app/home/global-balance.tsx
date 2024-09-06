@@ -33,7 +33,7 @@ const GlobalBalance = () => {
       calculateTotalBalance();
     }, 50000);
     return () => clearInterval(interval);
-  }, [chain, tokens["hbar"].balance]);
+  }, [chain, tokens["usdc-sepolia"].balance]);
   return (
     <div className="h-[25vh] w-full flex items-center justify-center">
       <div className="flex items-center">

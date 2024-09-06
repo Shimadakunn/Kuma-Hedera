@@ -76,7 +76,7 @@ const Settings = () => {
         })}
       <Separator />
       <h2>Faucets</h2>
-      {/* <FaucetCard token="eth-sepolia" /> */}
+      <FaucetCard token="usdc-sepolia" />
     </div>
   );
 };
@@ -145,17 +145,10 @@ function FaucetCard({ token }: { token: string }) {
       <div className="flex items-center justify-center space-x-2">
         <div className="flex items-center justify-center relative">
           <Image
-            src={`/tokens-icons/${tokens[token].coin.toLowerCase()}.svg`}
+            src={`/tokens-icons/${tokens[token].coin.toLowerCase()}.png`}
             width={60}
             height={60}
             alt={tokens[token].coin}
-          />
-          <Image
-            src={`/chains-icons/${chains[tokens[token].network].viem.name}.svg`}
-            width={30}
-            height={30}
-            alt={tokens[token].coin}
-            className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
           />
         </div>
         <div className="flex flex-col items-start justify-center">

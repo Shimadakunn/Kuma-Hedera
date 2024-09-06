@@ -61,19 +61,11 @@ export const TokenPage = () => {
         <div className="w-full flex items-center justify-center flex-col">
           <div className="flex items-center justify-center relative">
             <Image
-              src={`/tokens-icons/${tokens[token].coin.toLowerCase()}.svg`}
-              width={65}
-              height={65}
+              className="border border-white rounded-full"
+              src={`/tokens-icons/${tokens[token].coin.toLowerCase()}.png`}
+              width={40}
+              height={40}
               alt={tokens[token].coin}
-            />
-            <Image
-              src={`/chains-icons/${
-                chains[tokens[token].network].viem.name
-              }.svg`}
-              width={35}
-              height={35}
-              alt={tokens[token].coin}
-              className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4"
             />
           </div>
         </div>

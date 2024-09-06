@@ -12,14 +12,14 @@ export default function Home() {
   const { me, chain } = useMe();
   return (
     <main className="h-full w-full flex items-start justify-start flex-col">
-      <ChainSelector />
+      {/* <ChainSelector /> */}
       <GlobalBalance />
       <TokensDashboard />
-      <Button
+      {/* <Button
         onClick={async () => {
           await Deploy(me!);
         }}
-      />
+      /> */}
     </main>
   );
 }

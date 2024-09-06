@@ -7,7 +7,7 @@ import Interact from "./interact";
 export default function Finance() {
   return (
     <main className="h-full w-full flex items-start justify-start flex-col">
-      <ChainSelector />
+      {/* <ChainSelector /> */}
       <SuppliedBalance />
       <Interact />
     </main>

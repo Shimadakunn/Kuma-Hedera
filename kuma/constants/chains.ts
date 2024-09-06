@@ -9,41 +9,15 @@ export type ChainType = {
   fee?: string;
 };
 
-export const hedera = defineChain({
-  id: 296,
-  name: "Hedera Testnet",
-  network: "hedera-testnet",
-  nativeCurrency: {
-    symbol: "HBAR",
-    name: "HBAR",
-    decimals: 18,
-  },
-  rpcUrls: {
-    default: {
-      http: ["https://testnet.hashio.io/api"],
-    },
-    public: {
-      http: ["https://testnet.hashio.io/api"],
-    },
-  },
-  blockExplorers: {
-    default: {
-      name: "Hashscan",
-      url: "https://hashscan.io/testnet",
-    },
-  },
-  testnet: true,
-});
-
 export const CHAIN = {
-  ...hedera,
+  ...sepolia,
 };
 
 export const chains: {
   [key: string]: ChainType;
 } = {
-  hedera: {
-    viem: hedera,
-    bundlerRpc: "http://localhost:4337",
+  sepolia: {
+    viem: sepolia,
+    bundlerRpc: `https://api.stackup.sh/v1/node/${process.env.NEXT_PUBLIC_STACKUP_BUNDLER_SEPOLIA_API_KEY}`,
   },
 };

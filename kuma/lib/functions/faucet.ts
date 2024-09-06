@@ -36,7 +36,7 @@ export async function InteractWithFaucet(
         value: BigInt(0),
         data: encodeFunctionData({
           abi: FAUCET_ABI,
-          functionName: "claim",
+          functionName: "withdraw",
         }),
       },
     ];

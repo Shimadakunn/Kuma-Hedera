@@ -11,7 +11,14 @@ export type ContractType = {
 
 export const contracts: {
   [key: string]: ContractType;
-} = {};
+} = {
+  "aave-sepolia": {
+    name: "Aave",
+    address: "0x387d311e47e80b498169e6fb51d3193167d89F7D",
+    ipoolAddress: "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
+    tokenArray: ["usdc-sepolia"],
+  },
+};
 
 export const AAVE_ABI = [
   {

@@ -1,7 +1,7 @@
 import { Hex } from "viem";
 
 export const ENTRYPOINT_ADDRESS: Hex =
-  "0x48d2642087dD86F86ed205Ab204Fd10a5CB076F8";
+  "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789";
 
 export const ENTRYPOINT_ABI = [
   {
