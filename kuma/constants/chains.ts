@@ -1,4 +1,4 @@
-import { sepolia, arbitrumSepolia, Chain, optimismSepolia } from "viem/chains";
+import { sepolia, Chain } from "viem/chains";
 import { http } from "viem";
 import { defineChain } from "viem";
 
@@ -16,7 +16,7 @@ export const CHAIN = {
 export const chains: {
   [key: string]: ChainType;
 } = {
-  sepolia: {
+  hedera: {
     viem: sepolia,
     bundlerRpc: `https://api.stackup.sh/v1/node/${process.env.NEXT_PUBLIC_STACKUP_BUNDLER_SEPOLIA_API_KEY}`,
   },

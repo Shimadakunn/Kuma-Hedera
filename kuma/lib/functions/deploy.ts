@@ -32,16 +32,16 @@ type Me = { account: Address; keyId: Hex; pubKey: { x: Hex; y: Hex } };
 
 export async function Deploy(me: Me) {
   try {
-    builder.init(chains[tokens["usdc-sepolia"].network]);
+    builder.init(chains[tokens["hbar"].network]);
     console.log("smartWallet", smartWallet.client);
 
-    smartWallet.initRpc(chains[tokens["usdc-sepolia"].network]);
+    smartWallet.initRpc(chains[tokens["hbar"].network]);
 
     const { maxFeePerGas, maxPriorityFeePerGas }: EstimateFeesPerGasReturnType =
       await smartWallet.client.estimateFeesPerGas();
     console.log("maxFeePerGas", maxFeePerGas);
 
-    smartWallet.init(chains[tokens["usdc-sepolia"].network]);
+    smartWallet.init(chains[tokens["hbar"].network]);
 
     let value = parseEther("0");
     let calls = [

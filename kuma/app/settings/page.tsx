@@ -76,7 +76,7 @@ const Settings = () => {
         })}
       <Separator />
       <h2>Faucets</h2>
-      <FaucetCard token="usdc-sepolia" />
+      <FaucetCard token="hbar" />
     </div>
   );
 };
