@@ -1,32 +1,29 @@
 <div align="center">
-<img src="https://kuma-paw.vercel.app/favicon.ico" width="100"/>
+<img src="https://kuma-hedera.vercel.app/favicon.ico" width="100"/>
 <h1 align="center" style="margin-bottom: 0">ERC-4337 Smart Wallet controlled with Passkeys</h1>
 <p align="center">An All-in-one App that let you abstract all the difficulties of the blockchain</a></p>
 </div>
 
 # Smart Contracts
 ## Supported Chains
-- Optimism Sepolia
-- Arbitrum Sepolia
-- Sepolia
+- Hedera
 
-## Factory
+## [EntryPoint](https://hashscan.io/testnet/contract/0.0.4755335)
 ```
-0xaCea7eD933a39B18E30C9F899a97787669f55752
+0x48d2642087dd86f86ed205ab204fd10a5cb076f8
 ```
 
-## P256 Verifier
+## [Factory](https://hashscan.io/testnet/contract/0.0.4755395)
 ```
-0x3AB1BDed845DE299EcC4A8E5aB6AF2AB10860F04
-```
-
-## Paymaster
-```
-0x10Fa4C0fe7a48B7d5372Cb84651AA90E5BEB8E88
+0xc71a8181b63dcb39015e05391747d8de505f37ba
 ```
 
-# Demo Site
-[Kuma.io](https://kuma-paw.vercel.app/)
+## [Paymaster](https://hashscan.io/testnet/contract/0.0.4755408)
+```
+0xd0a0dccc866b650a2db92434bc3ded773f417d2e
+```
+
+# [Demo Site](https://kuma-hedera.vercel.app/)
 
 # Project Summary
 
